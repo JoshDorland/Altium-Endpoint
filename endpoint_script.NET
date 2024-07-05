@@ -1,0 +1,18 @@
+Wire List
+
+<<< Component List >>>
+LV Controller Rev 2, J3         X013           
+Front Controller Rev 2, J2      X022           
+
+<<< Wire List >>>
+
+  NODE  REFERENCE  PIN #   PIN NAME       PIN TYPE    PART VALUE
+
+[00001] GND-01-RH-BK-0.35
+        X013       10      GND            PASSIVE     LV Controller Rev 2, J3
+        X022       6       GND            PASSIVE     Front Controller Rev 2, J2
+
+[00002] PWR-01-RH-RD-0.35
+        X013       8       FRONT_CONTROLLEPASSIVE     LV Controller Rev 2, J3
+        X022       4       P24V_IN        PASSIVE     Front Controller Rev 2, J2
+
