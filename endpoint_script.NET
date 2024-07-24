@@ -1,18 +1,47 @@
 Wire List
 
 <<< Component List >>>
-LV Controller Rev 2, J3         X013           
+LV Controller Rev 2 J3          X012           
+LV Controller Rev 2 J3          X013           
+Front Controller Rev 2, J1      X021           
 Front Controller Rev 2, J2      X022           
+Dash Controller Rev 1, J1       X031           
+GEN_SPLICE                      Z000           
+GEN_SPLICE                      Z999           
 
 <<< Wire List >>>
 
   NODE  REFERENCE  PIN #   PIN NAME       PIN TYPE    PART VALUE
 
 [00001] GND-01-RH-BK-0.35
-        X013       10      GND            PASSIVE     LV Controller Rev 2, J3
+        X013       10      GND            PASSIVE     LV Controller Rev 2 J3
         X022       6       GND            PASSIVE     Front Controller Rev 2, J2
 
-[00002] PWR-01-RH-RD-0.35
-        X013       8       FRONT_CONTROLLEPASSIVE     LV Controller Rev 2, J3
+[00012] PWR-01-RH-RD-0.35
+        X013       8       FRONT_CONTROLLEPASSIVE     LV Controller Rev 2 J3
         X022       4       P24V_IN        PASSIVE     Front Controller Rev 2, J2
+
+[00013] VCN-01-RH-VT-0.35-T1
+        X012       6       VEHICLE_CANH   PASSIVE     LV Controller Rev 2 J3
+        Z000       1       1              PASSIVE     GEN_SPLICE
+
+[00014] VCN-02-RH-GY-0.35-T1
+        X012       7       VEHICLE_CANL   PASSIVE     LV Controller Rev 2 J3
+        Z999       1       1              PASSIVE     GEN_SPLICE
+
+[00015] VCN-03-RH-GY-0.35-T2
+        X021       5       VEHICLE_CANL   PASSIVE     Front Controller Rev 2, J1
+        Z999       7       7              PASSIVE     GEN_SPLICE
+
+[00016] VCN-04-RH-VT-0.35-T2
+        X021       6       VEHICLE_CANH   PASSIVE     Front Controller Rev 2, J1
+        Z000       7       7              PASSIVE     GEN_SPLICE
+
+[00017] VCN-05-RH-VT-0.35-T3
+        X031       7       VEHICLE_CANH   PASSIVE     Dash Controller Rev 1, J1
+        Z000       5       5              PASSIVE     GEN_SPLICE
+
+[00018] VCN-06-RH-GY-0.35-T3
+        X031       8       VEHICLE_CANL   PASSIVE     Dash Controller Rev 1, J1
+        Z999       5       5              PASSIVE     GEN_SPLICE
 
